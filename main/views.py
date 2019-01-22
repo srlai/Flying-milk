@@ -40,12 +40,12 @@ def ok(request):
 
 
 def signup(request):
-    return render(request,'signup.html',{})
+    return render(request,'templates/signup.html',{})
 
 
 def login(request):
-    return render(request,'signup.html',{})
+    return render(request,'templates/login.html',{})
 
 def notlogin(request):
-    return render(request,'signup.html',{})
+    return render(request,'templates/none.html',{})
     
