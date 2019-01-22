@@ -39,7 +39,13 @@ def ok(request):
     return TemplateResponse(request,'templates/main.html',context)
 
 
-def signup_view(request):
+def signup(request):
     return render(request,'signup.html',{})
 
+
+def login(request):
+    return render(request,'signup.html',{})
+
+def notlogin(request):
+    return render(request,'signup.html',{})
     
