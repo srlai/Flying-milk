@@ -2,7 +2,11 @@
 {% load static %}
 <html lang="en">
 <head>
-	<title>Login V2</title>
+	{% if title %}
+		<title>Flying MilkTea - {{title}}</title>
+	{% else %}
+		<title>Flying MilkTea</title>
+	{% end if %}
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	

@@ -40,11 +40,11 @@ def ok(request):
 
 
 def signup(request):
-    return render(request,'templates/signup.html',{})
+    return render(request,'templates/signup.html',{'title':'Signup'})
 
 
 def login(request):
-    return render(request,'templates/login.html',{})
+    return render(request,'templates/login.html',{'title':'Login'})
 
 def notlogin(request):
     return render(request,'templates/none.html',{})
