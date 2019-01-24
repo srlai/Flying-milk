@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'users.apps.UsersConfig',
+    'crispy_forms',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -124,3 +126,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "main/static"),
 ]
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL='homepage'
